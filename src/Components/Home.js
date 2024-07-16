@@ -13,7 +13,7 @@ const Home = () => {
     setAnimate(true);
   }, []);
   const gradientBackgroundStyle = {
-    background: "linear-gradient(360deg,  #FFEADE 20%, #FCFCFC 100%)",
+    background: "linear-gradient(180deg,  #59A7FE 20%, #FCFCFC 100%)",
   };
   return (
     <React.Fragment>
@@ -30,7 +30,7 @@ const Home = () => {
                 <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center mb-4">
                   <div
                     className="btn rounded-pill get-started-btn mb-3 mb-sm-0"
-                    style={{ backgroundColor: "#FF7223", color: "white" }}
+                    style={{ backgroundColor: "#59A7FE", color: "white" }}
                   >
                     Get Started
                     <i className="ri-arrow-right-line align-middle ms-1"></i>
@@ -40,14 +40,13 @@ const Home = () => {
                     news about CurateLearn
                   </span>
                 </div>
-                <h1 className={`display-10 fw-bold mb-3 text-dark lh-base custom-title ${animate ? 'animate-slide-in' : ''}`}
-                    style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Discover your personalized AI-guided self-learning platform.
+                <h1 className={`display-10 fw-bold mt-5 mb-3 text-dark lh-base custom-title ${animate ? 'animate-slide-in' : ''}`}
+                    style={{ fontFamily: 'ZCOOL KuaiLe' }}>
+                  EVERY NEWS ON TON
                 </h1>
-                <p className="lead text-break text-dark custom-lead"
-                   style={{ fontFamily: 'Mulish, sans-serif' }}>
-                  Supercharge your self-learning adventure with AI-curated resources, personalized learning spaces, and state-of-the-art tools.
-                </p>
+                <span className="small-text w-0 text-dark mt-2 mt-sm-0 ms-sm-3">
+                Feeds, news, updates and predictions for the ton ecosystem.
+                  </span>
                 <div className="d-flex justify-content-center  mt-3 mb-5">
                   <Button
                     className="btn mb-5  btn-primary"
