@@ -19,13 +19,13 @@ const NavBar = () => {
   };
 
   const buttonStyle = {
-    backgroundColor: '#FF7223',
-    borderColor: '#FF7223',
+    backgroundColor: '#59A7FE',
+    borderColor: '#59A7FE',
   };
 
   const centerNavStyle = {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'start',
     flexGrow: 1,
   };
 
@@ -42,8 +42,8 @@ const NavBar = () => {
     <div className="justify-center">
       <Navbar bg="myRed" data-bs-theme="light" style={gradientBackgroundStyle} expand="lg">
         <Container>
-          <Navbar.Brand className="fw-bold" href="#home" style={{ color: '#FF7223' }}>
-            CurateLearn
+          <Navbar.Brand className="fw-bold" href="#home" style={{ color: '#59A7FE' }}>
+            Tonmic
           </Navbar.Brand>
           <Navbar.Toggle 
             aria-controls="basic-navbar-nav" 
@@ -55,10 +55,10 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav" in={isOpen}>
             <Nav style={centerNavStyle}>
               {/* <Nav.Link href="#home" style={navLinkStyle}>Home</Nav.Link> */}
-              <Nav.Link href="#services" style={navLinkStyle}>Overview</Nav.Link>
-              <Nav.Link href="#portfolio" style={navLinkStyle}>About Us</Nav.Link>
-              <Nav.Link href="#contact" style={navLinkStyle}>Blog</Nav.Link>
-              <Nav.Link href="#faq" style={navLinkStyle}>FAQ's</Nav.Link>
+              <Nav.Link href="#services" style={navLinkStyle}>News</Nav.Link>
+              <Nav.Link href="#portfolio" style={navLinkStyle}>Market</Nav.Link>
+              <Nav.Link href="#contact" style={navLinkStyle}>Consulting</Nav.Link>
+              <Nav.Link href="#faq" style={navLinkStyle}>Not</Nav.Link>
             </Nav>
             <Button color="primary" style={buttonStyle} onClick={() => document.getElementById('submit').scrollIntoView({ behavior: 'smooth' })}>Join Waitlist</Button>
           </Navbar.Collapse>

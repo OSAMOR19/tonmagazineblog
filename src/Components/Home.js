@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardBody, Col, Container, Row, Button } from "reactstrap";
-import { Link } from "react-router-dom";
-import NavBar from "./Nav";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-import imgpattern from "../Images/homeimage.svg";
+import { Col, Container, Row, Button } from "reactstrap";
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -27,29 +21,16 @@ const Home = () => {
           <Row className="justify-content-center">
             <Col xs={12} sm={10} lg={8}>
               <div className="text-center text-light mt-4 mt-lg-5 pt-5">
-                <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center mb-4">
-                  <div
-                    className="btn rounded-pill get-started-btn mb-3 mb-sm-0"
-                    style={{ backgroundColor: "#59A7FE", color: "white" }}
-                  >
-                    Get Started
-                    <i className="ri-arrow-right-line align-middle ms-1"></i>
-                  </div>
-                  <span className="small-text w-0 text-dark mt-2 mt-sm-0 ms-sm-3">
-                    Join our waitlist to receive exclusive updates and launch
-                    news about CurateLearn
-                  </span>
-                </div>
                 <h1 className={`display-10 fw-bold mt-5 mb-3 text-dark lh-base custom-title ${animate ? 'animate-slide-in' : ''}`}
                     style={{ fontFamily: 'ZCOOL KuaiLe' }}>
                   EVERY NEWS ON TON
                 </h1>
-                <span className="small-text w-0 text-dark mt-2 mt-sm-0 ms-sm-3">
-                Feeds, news, updates and predictions for the ton ecosystem.
-                  </span>
-                <div className="d-flex justify-content-center  mt-3 mb-5">
+                <p className="small-text w-0 text-muted mt-sm-0 ms-sm-2">
+                  Feeds, news, updates and predictions for the ton ecosystem.
+                </p>
+                <div className="d-flex justify-content-center mt-3 mb-5">
                   <Button
-                    className="btn mb-5  btn-primary"
+                    className="btn mb-5 btn-primary"
                     style={{ background: "#101010" }}
                     onClick={() => document.getElementById('submit').scrollIntoView({ behavior: 'smooth' })}
                   >
@@ -61,13 +42,6 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-        <Row className="mt-2 mt-sm-2 mb-0 pt-sm-2 mb-sm-n3">
-          {/* <Col>
-            <div className="demo-img-patten-bottom px-5 mx-2">
-              <img src={imgpattern} className="img-fluid" alt="..." />
-            </div>
-          </Col> */}
-        </Row>
       </section>
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Mulish&display=swap');
@@ -98,17 +72,6 @@ const Home = () => {
         .custom-lead {
           font-size: 1.2rem;
         }
-        .demo-img-patten-bottom {
-          position: relative;
-          width: 100%;
-          overflow: hidden;
-        }
-        .demo-img-patten-bottom img {
-          width: 100%;
-          height: auto;
-          display: block;
-          margin-bottom: -1px; /* Removes the gap at the bottom */
-        }
         @media (max-width: 576px) {
           .custom-title {
             font-size: 2rem;
@@ -121,4 +84,5 @@ const Home = () => {
     </React.Fragment>
   );
 };
+
 export default Home;
