@@ -9,11 +9,11 @@ import {
   CardBody,
   TabContent,
 } from "reactstrap";
-import avatar1 from "../Images/selflearn3.svg";
-import avatar2 from "../Images/selflearn1.svg";
-import avatar3 from "../Images/selflearn2.svg";
-import avatar4 from "../Images/selflearn4.svg";
-import avatar5 from "../Images/selflearn.svg";
+import avatar1 from "../Images/usdtimg.png";
+import avatar2 from "../Images/usdtimg.png";
+import avatar3 from "../Images/usdtimg.png";
+import avatar4 from "../Images/usdtimg.png";
+import avatar5 from "../Images/usdtimg.png";
 import { NavItem, NavLink } from "react-bootstrap";
 import classnames from "classnames";
 
