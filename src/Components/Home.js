@@ -28,15 +28,8 @@ const Home = () => {
                 <p className="small-text w-0 text-muted mt-sm-0 ms-sm-2">
                   Feeds, news, updates and predictions for the ton ecosystem.
                 </p>
-                <div className="d-flex justify-content-center mt-3 mb-5">
-                  <Button
-                    className="btn mb-5 btn-primary"
-                    style={{ background: "#101010" }}
-                    onClick={() => document.getElementById('submit').scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    Join Waitlist{" "}
-                    <i className="ri-arrow-right-line align-middle ms-1"></i>
-                  </Button>
+                <div className="d-flex justify-content-center mt-5 mb-5">
+                  
                 </div>
               </div>
             </Col>

@@ -15,8 +15,6 @@ function App() {
       <Home/>
       <Services/>
       <Portfolio/>
-      <FAQ/>
-      <Contact/>
       <Footer/>
     </React.Fragment>
   );

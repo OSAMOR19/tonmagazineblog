@@ -26,17 +26,19 @@ const Services = () => {
   };
 
   const tabItems = [
-    "Customised Curriculum",
-    " Personalised Learning space",
-    "AI Curated Resources",
-    
-    "AI Mentor",
-    "Integrated IDE",
+    "All",
+    "Development",
+    "Research",
+    "Community",
+    "Media",
+    "Partnership",
+    "Ecosystem",
+    "Events",
   ];
 
   const cardStyle = {
     background:
-      "radial-gradient(circle at center, rgba(29, 179, 251, 0.1) 0%, rgba(153, 129, 232, 0.1) 50%, rgba(195, 65, 197, 0.1) 100%)",
+      "",
     borderRadius: "25px",
     overflow: "hidden",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -75,11 +77,7 @@ const Services = () => {
 
               <Row className="justify-content-center">
                 <Col xxl={11}>
-                  <div className="nav-container text-center">
-                    <h1  className="fw-bold mt-5">A platform for Self-Learners</h1>
-                    <p className=" mb-4 text-muted">Empower Your Self-Learning Journey with a Wealth of Resources and Personalized Tools. Making Self-Learning Easy.</p>
-                    <div className="mb-5"></div>
-                    
+                  <div className="nav-container text-center"> 
                     <Nav
                       pills
                       className="nav nav-pills animation-nav nav-justified mb-3 flex-nowrap overflow-auto"
@@ -103,7 +101,7 @@ const Services = () => {
                               borderRadius: "50px",
                               backgroundColor:
                                 animationNavTab === (index + 1).toString()
-                                  ? "#FF7223"
+                                  ? "#59A7FE"
                                   : "transparent",
                               color:
                                 animationNavTab === (index + 1).toString()

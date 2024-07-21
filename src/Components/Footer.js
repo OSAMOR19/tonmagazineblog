@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 const Footer = () => {
   const footerStyle = {
-    background: "linear-gradient(90deg, #0E0D13 0%, #121212 100%)",
+    background: "#FFFFFF",
     color: "#ffffff",
     paddingTop: "40px",
     paddingBottom: "40px",
@@ -13,10 +13,11 @@ const Footer = () => {
 
   const textCenter = {
     textAlign: "start",
+    color: "#121212",
   };
 
   const linkStyle = {
-    color: "#ffffff",
+    color: "#121212",
     textDecoration: "none",
     display: "inline-block",
     marginBottom: "15px",
@@ -28,7 +29,7 @@ const Footer = () => {
   };
 
   const curateLearnStyle = {
-    color: "#FF7223",
+    color: "#59A7FE",
   };
 
   return (
@@ -37,8 +38,8 @@ const Footer = () => {
         <Row>
           <Col lg={4}>
             <div>
-              <h2 style={curateLearnStyle}>CurateLearn</h2>
-              <p style={textCenter}>© 2024. CurateLearn All rights reserved.</p>
+              <h2 style={curateLearnStyle}>Ton NOMADS</h2>
+              <p style={textCenter}>© 2024. Toninc All rights reserved.</p>
             </div>
           </Col>
           <Col lg={8}>
@@ -47,8 +48,8 @@ const Footer = () => {
                 <div style={linkColumnStyle}>
                   {/* <a href="#home" style={linkStyle}>Community</a> */}
                   <a href="#portfolio" style={linkStyle}>Contact us</a>
-                  <a href="#contact" style={linkStyle}>curatelearn@aceembedded.io</a>
-                  <a href="#faq" style={linkStyle}>+234-805-123-0116</a>
+                  <a href="#contact" style={linkStyle}>tonnomads.io</a>
+                  <a href="#faq" style={linkStyle}>+933-805-434-455</a>
                 
                 </div>
               </Col>
@@ -56,7 +57,7 @@ const Footer = () => {
                 <div style={linkColumnStyle}>
                   <a href="#about" style={linkStyle}>FAQs</a>
                   {/* <a href="#blog" style={linkStyle}>Blog</a> */}
-                  <a href="https://ng.linkedin.com/in/daniel-ogunlolu-falcon" style={linkStyle} target="_blank" rel="noopener noreferrer">Meet the Founder</a>
+                  <a href="" style={linkStyle} target="_blank" rel="noopener noreferrer">Meet the Founder</a>
                   {/* <a href="#testimonials" style={linkStyle}>Privacy Policy</a> */}
                  
                 </div>
